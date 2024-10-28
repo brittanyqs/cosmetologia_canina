@@ -1,0 +1,55 @@
+.carousel-container {
+    z-index: 1;
+    position: relative; /* Permite posicionar elementos internos */
+    max-width: 100%; /* Ancho máximo del contenedor */
+    overflow: hidden; /* Oculta el desbordamiento de elementos */
+    margin: 20px auto; /* Centra el carrusel horizontalmente */
+  }
+  
+  .carousel {
+    z-index: 0;
+    display: flex; /* Usa flexbox para el diseño de elementos en línea */
+    transition: transform 0.5s ease; /* Transición suave al deslizar */
+  }
+  
+  .carousel-item {
+    z-index: 1;
+    min-width: 100%; /* Cada elemento ocupa todo el ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho */
+  }
+  #img{
+    z-index: 1;
+    align-items: center;
+    width: 100%;
+  }
+  .carousel img {
+    z-index: 1;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del elemento */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+  }
+  
+  .carousel-buttons {
+    position: absolute; /* Posiciona los botones sobre el carrusel */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta la posición para centrar */
+    width: 100%; /* Asegura que ocupen todo el ancho */
+    display: flex; /* Usa flexbox para alinear los botones */
+    justify-content: space-between; /* Espacia los botones en los extremos */
+    z-index: 1; /* Asegura que los botones estén por encima del carrusel */
+  }
+  
+  .carousel-button {
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 50%; /* Botones redondos */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s; /* Transición para el fondo */
+  }
+  
+  .carousel-button:hover {
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 1); /* Fondo opaco al pasar el ratón */
+  }

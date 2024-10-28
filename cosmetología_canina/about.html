@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+    <link rel="stylesheet" href="..//CSS/styles.css"><link rel="stylesheet" href="..//CSS/mode.css">
+    <link rel="stylesheet" href="..//CSS/acercade.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81581fb069.js"crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"> <img src="..//Media/Glamour Paws (1).png" alt="logo" id="logoI"> </a>
+     
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        <nav id="navbar">    
+    <a href="index.html">Inicio</a>
+    <a href="login.html" id="login-link">Iniciar Sesión </a>
+    <a href="register.html" id="register-link">Registrarse </a>
+    <a href="contact.html" id="contactos-link">Contactos</a>
+    <a href="location.html" id="ubicacion-link">Ubicación</a>
+    <a href="historial.HTML" id="historial-link" style="display:none;">Ver compras</a>
+    <a href="admin.html" id="productos-link" style="display: none;">Productos</a>
+    <span id="welcome-message" style="display:none;"></span>
+    <a href="#" id="logout-link" style="display:none;">Cerrar Sesión</a>
+    <button id="cart-btn"><i class="fa-solid fa-cart-shopping"></i> (0)</button>
+        </nav>
+        </header>
+        
+     <!--mode-->
+     <div id="mode-selector-theme">
+        <label for="mode-selector">Selecciona un modo:</label>
+      <select id="mode-selector">
+      <option value="light">Modo predeterminado</option>
+      <option value="dark">Modo Oscuro</option>
+    
+      </select>
+      <button id="toggle-mode-btn">Aplicar Modo</button>
+      </div>
+        <main>
+            <div class="about-container">
+                <h1 id="h1ab">Acerca de nosotros</h1>
+                <div class="about-text">
+                    <h1 id="h1">Glamour Paws</h1>
+                    <p>En Glamour Paws, entendemos que tus mascotas son más que simples animales; son parte de tu familia.
+                     Nuestra misión es ofrecer un servicio de cosmética canina de lujo y exclusividad, donde cada detalle está cuidadosamente 
+                     diseñado para garantizar que tu mejor amigo reciba el tratamiento que merece. </p> 
+                    <p>Desde cortes de pelo estilizados hasta tratamientos de spa, cada uno de nuestros servicios está pensado con la máxima 
+                        calidad y confort en mente. Pero lo que realmente nos distingue es nuestro compromiso con el servicio al cliente y el 
+                        buen trato a cada perro que pasa por nuestras puertas. Sabemos que la confianza y la seguridad son esenciales, por eso
+                         nos esforzamos por crear una experiencia única y reconfortante tanto para ti como para tu mascota.</p>
+                    <p>Ven y descubre la diferencia en Glamour Paws, donde el lujo y el cariño van de la mano. 🐾✨</p>
+                </div>
+            <div class="about-image">
+                    <img src="../Media/p8.jpg" alt="imagen de la cosmetología">
+            </div>
+        </div>
+        
+    </main>
+  
+   <!-- Pie de Página -->
+   <footer>
+    <span>@Supermercado 2024 - Todos los derechos reservados</span>
+    <div class="footerdiv">
+        <div class="footerdiv1">
+            <img src="..//Media/Glamour Paws (1).png" style="border-radius: 50%; width: 200px; height: 200px;" alt="Logo">
+        </div>
+        <div class="footerdiv2">
+            <h3 class="headline footer">Servicio al cliente</h3>
+            <ul class="footer-links">
+                <li><a href="#">Métodos de pago</a></li>
+                <li><a href="#">Entregas y devoluciones</a></li>
+                <li><a href="#">Políticas de cookies</a></li>
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+        </div>
+        <div class="footerdiv2">
+            <h2 class="headline">Contáctenos</h2>
+            <ul>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:3437-8978">3437-8978</a></li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:super@super.com">super@super.com</a></li>
+                <li><a href="../HTML/contactos.html"><i class="fa fa-comment" aria-hidden="true"></i>Contáctenos</a></li>
+                <li><a href="../HTML/preguntas.html"><i class="fa fa-question-circle" aria-hidden="true"></i>Preguntas frecuentes</a></li>
+                <li><a href="../HTML/ubicacion.html"><i class="fa fa-store" aria-hidden="true"></i>Supermercados</a></li>
+                <li><a href="../HTML/acercade.html"><i class="fa fa-building" aria-hidden="true"></i>¿Quiénes somos?</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    
+    <script src="..//JS/script.js"></script>
+    <script src="..//JS/mode.js"></script>
+</body>
+</html>
+

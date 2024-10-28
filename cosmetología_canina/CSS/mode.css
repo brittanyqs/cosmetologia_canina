@@ -1,0 +1,148 @@
+:root {
+  --background-color: #fefeff;
+  --text-color: #000;
+  --header-background-color:  #d4abc7;
+  --footer-background-color:#d4abc7;
+  --card-background-color: white;
+  --button-hover-color:#b87aa4;
+}
+
+button:hover{
+  background-color: var(--button-hover-color);
+}
+nav-root {
+  background-color: #bc7da8;
+  color: #ffffff;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--header-background-color);
+}
+
+footer {
+  background-color: var(--footer-background-color);
+}
+
+.product-card {
+  background-color: var(--card-background-color);
+}
+
+
+.dark-mode {
+  --background-color: #000000;
+  --text-color: #000000;
+  --header-background-color: #151515;
+  --footer-background-color: #000000;
+  --card-background-color: #252525;
+ 
+  --button-hover-color: #000000;
+}
+.dark-mode toggle-mode-btn {
+  background-color: rgb(24, 24, 24);
+  color:rgb(24, 24, 24);
+}
+.dark-mode mode-selector-theme {
+  background-color: rgb(223, 0, 0);
+}
+.dark-mode body{
+  background-color: #333;
+}
+.dark-mode nav a, .dark-mode #welcome-message {
+  color: #fffcfc;
+}
+
+.dark-mode footer a {
+  color: #ddd;
+}
+.dark-mode button{background-color: #151515;
+  color: #ddd;
+}
+.dark-mode button:hover{background-color: #000000;
+  color: #ddd;
+}
+.dark-mode nav a:hover{background-color: #000000;
+  color: #ddd;
+}
+.dark-mode #countdown {background-color: #817b7b2b;
+  color: #600000;
+}
+
+body.dark-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+   
+  
+/****************************************************************************************/
+
+
+/* Contenedor del selector de modo */
+#mode-selector-theme {
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  background-color: #f9f9f9;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Estilo de la etiqueta y el selector */
+label, select {
+  display: inline;
+  margin-bottom: 10px;
+}
+
+
+  /*TEMPORIZADOR*/
+  
+.temporizador{
+    
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.temporizador {
+
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+h1 {
+color: #333;
+margin-bottom: 20px;
+}
+
+#countdown {
+font-size: 36px;
+font-weight: bold;
+color: #ac769b;
+background-color: #faeef8;
+padding: 10px;
+border-radius: 8px;
+display: inline-block;
+}
+
+.finalizado {
+color: #b671a1;
+font-size: 28px;
+font-weight: bold;
+}
